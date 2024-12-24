@@ -1,0 +1,57 @@
+/* Parent container */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #121212;  /* or rgb(0, 0, 0), or #000 */
+    color: white; /* To ensure the text remains visible on a black background */
+    margin: 0; /* Optional: Remove default browser margins */
+    padding: 0; /* Optional: Remove default browser padding */
+  }
+.row {
+    margin: 0 auto;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+/* Movie grid layout */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);   /* 5 equal columns */
+    grid-auto-rows: auto;
+    gap: 15px;
+    width: 100%;
+}
+
+/* Individual movie card */
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Movie poster styles */
+.poster {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 9px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* Movie title styles */
+.movie-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 8px;
+    color: #fff;
+}
+
+/* Hover effect for enlargement */
+.poster:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}

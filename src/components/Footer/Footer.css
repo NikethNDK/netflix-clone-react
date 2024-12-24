@@ -1,0 +1,47 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #121212; 
+    color: white;
+    padding: 20px 40px;
+    font-size: 14px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  .footer-section ul li:hover {
+    text-decoration: underline;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icons i {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .social-icons i:hover {
+    color: #1da1f2; /* Example color for hover effect */
+  }
+  
